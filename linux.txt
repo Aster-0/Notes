@@ -1,0 +1,16 @@
+----HISTORY-----
+
+unix was created (in 1969 by Ken Thompson andDennis Ritchie) before linux kernel(in 1991 by Linus Torvalds).
+kernel allows the hardware to talk to the software, kernal controls pretty much everything.
+
+----Choosing a linux distro-----
+
+linux is actually quite a misnomer, since it actually refers to the linux kernel. However many distro use the linux kernel so therefore are commonly known as Linux os
+linux system is divided into 3 parts :
+1.Hardware:This includes all the hardware that your system runs on as well as memory, CPU, disks, etc.
+2.Linux Kernel:Kernel is core of os.It manages the hardware and tells it how to interact with the system.
+3.User Space:This is where user will be directly interacting with the system.
+
+
+
+
