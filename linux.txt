@@ -29,4 +29,57 @@ eg $whoami
 
 date cmd give you date and time
 
+----pwd(present working directory)----
+
+everything in linux is file and every file is organized in a hierarchical directory tree.
+the first directory in the filesystem in aptly named the root directory(/).
+the location of these file and dir are referred to as path
+pwd cmd is to see where you are or your present working dir
+$pwd
+
+----cd(change directory)----
+
+cd cmd used for moving around filesystem
+$cd <path>
+path are of two types
+1. Absolute : this is the path from the root dir.
+2. Relative : this is the path from where you are currently in filesystem.
+shortcuts:
+	.(current directory) - dir in which you are currently in
+	..(parent directory) - takes you to the directory above your current.
+	~(home directory) - this dir defaults to your "home dir".Such as /home/pete.
+	-(previous directory) - This will take you to previous dir you were just at.
+
+----ls(list Directories)----
+
+ls cmd is used to list the contents of your present directory.
+eg. $ls
+or to list the dir which path you specified.
+$ ls <path>
+eg. $ ls folder2/ 
+you can also use flags(option/arguments) to add more functionality.
+-R for recursively list directory contents(show files/folder inside folder) , -r to list in reverse order while sorting and -t to sort by modification time , newest first.
+-l for long and -a for all(hidden files) 
+eg. ls -la
+hidden files start with . 
+eg .git .hello.txt
+
+----touch----
+
+touch cmd allows you to create empty files.
+$touch <filename>
+touch is also used to change timestamps on existing files and dir.
+
+----file----
+
+in linux filenames aren't required to represent the contents of the file. You can create a file called funny.gif that isn't actually a GIF.
+to find what kind of file is we can use find cmd to show a description of the file contents.
+$file <filename>
+eg. $file banana.jpg
+
+----cat----
+
+to read a file we use cat cmd, short for concatenate it not only displays file contents but it can combine multiple files and show you the output of them
+$cat <filename>
+$cat <file1> <file2>
 
