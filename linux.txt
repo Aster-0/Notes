@@ -83,3 +83,27 @@ to read a file we use cat cmd, short for concatenate it not only displays file c
 $cat <filename>
 $cat <file1> <file2>
 
+----less----
+
+if you are viewing text files larger than a simple output the you can use less cmd 
+$ less <path of file>
+eg. less text1
+some inner cmds:
+	q - quit 
+	page up/down or arrow up/down - navigate
+	g - moves to beginning
+	G - moves to end
+	/search - to highlight words in file 
+	h - help
+
+----history----
+
+to see the history of your cmds you can use cmd history
+$ history
+run save cmds you did before just hit up arrow key
+want to run previous cmd without typing it use !!
+$ !!
+there is also ctrl-R shortcut for reverse search cmd after hiting ctrl+R the start typing cmd parts it will show you the matches
+to clear the terminal use
+$ clear
+press tab to to complete name of file or dir 
