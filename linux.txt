@@ -11,6 +11,22 @@ linux system is divided into 3 parts :
 2.Linux Kernel:Kernel is core of os.It manages the hardware and tells it how to interact with the system.
 3.User Space:This is where user will be directly interacting with the system.
 
+----Shell----
 
+shell is a program that takes input and send to os to perform. Terminal or console these are programs that launch shell for you.
+Bash(Bourne Again shell)
+the shell prompt format is : 
+username@hostname:current_directory
+eg. pete@icebox:/home/pete $
+$ is for normal users
+
+echo cmd is used to print something
+$ echo <text to print>
+eg $ echo Hello world
+
+whoami cmd tells you in which user you are loged in
+eg $whoami
+
+date cmd give you date and time
 
 
