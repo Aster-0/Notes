@@ -107,3 +107,91 @@ there is also ctrl-R shortcut for reverse search cmd after hiting ctrl+R the sta
 to clear the terminal use
 $ clear
 press tab to to complete name of file or dir 
+
+----cp(copy)----
+
+by cp cmd you can create copy of files or dir
+$ cp <source> <destination>
+you can copy multiple files and dir as well as use wildcards.
+A wildcard is a character that can be substituted for a pattern based selection, giving you more flexibility with searches.You can use wildcards in every cmds for more flexibility
+	* the wildcard of wildcard, it's used to represent all single characters or any string
+	? represent one character
+	[] represent any character within the brackets
+eg. cp *.jpg /home/pete/Pictures
+this will copy all the files with .jpg extension in current dir to the pictures dir.
+-r cmd is used for recursively copy the files and dir within a dir.
+$ cp -r Pumpkin/ /home/pete/Documents
+one thing to note, if you copy a file over to a dir that has the same filename, the file will be overwritten with whatever you are copying over. This is no bueno if you have a file that you don't want to get accidentally overwritten. You can use the -i flag(interactive) to prompt you before overwriting a file
+eg. cp -i mycoolfile /home/pete/Pictures
+
+----mv(move)----
+
+used for moving files/dir and also renaming them
+for rename files
+$ mv oldfile newfile
+move a file to deffernet dir
+$mv file2 /home/pete/Documents
+moving more than one file
+$mv file_1 file_2 /somdir
+renaming dir 
+$mv dir1 dir2
+-i to prompt you before overwriting anything
+you can backup file with -b and it will create a backup file it will rename the file with a ~.
+$mv -b dir1 dir2
+
+----mkdir(Make dir)----
+
+we can create dir using mkdir cmd
+$ mkdir <dirname> 
+also create subdirectories at the same time with the -p(parent flag)
+$mkdir -p books/redshell/fav
+
+----rm(remove)----
+
+to remove a file
+$rm <filename>
+to remove a dir
+$rmdir <dirname>
+-i flag to remove but with a prompt
+-r flag is recursive flag tell to delete all the files and dir inside it
+some files are write protected which prompt before deleting to avoid or to delete them forcefully use -f flag.
+
+----find----
+
+used to find file 
+-name flag to specify name of the file
+-type flag to specify type of file d for dir f for file 
+$find /home -type d -name Myfolder
+
+----help----
+
+for help you can use
+$ help <cmd name>
+$ <cmd name> --help
+
+----man(manual)----
+
+to see the manual or to get detail info of any cmd we can use
+$ man <cmd name>
+
+----whatis----
+
+if you forget about any cmd you can use whatis to give you short discription of cmd
+$ whatis cat
+discription get sourced from manual page
+
+----alias----
+
+to put cmd in variable when cmd is big and you using it repeatly then alias cmd will help
+$ alias <varname>='cmd'
+but these will not save after reboot to make it permanent alias you need to add a permanent alias in ~/.bashrc.
+for removing alias 
+$unalias <variable name>
+
+----exit----
+
+to exit the shell you can use 
+$exit
+or the logout cmd
+$logout
+
